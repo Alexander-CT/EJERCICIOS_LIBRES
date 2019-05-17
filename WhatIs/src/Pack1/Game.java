@@ -13,6 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.ImageIcon;
+import javax.swing.JTextField;
 
 public class Game extends JFrame {
 
@@ -46,6 +47,7 @@ public class Game extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		this.setLocationRelativeTo(null);
+		//t = new Timer(10000,acciones);
 		
 		JButton btnPausar = new JButton("Pausar");
 		btnPausar.setBounds(745, 11, 89, 30);
@@ -62,9 +64,10 @@ public class Game extends JFrame {
 		panelTV.setBounds(63, 52, 712, 454);
 		contentPane.add(panelTV);
 		panelTV.setLayout(null);
+		//panelTV.setVisible(false);
 		
 		JLabel lblTv = new JLabel("");
-		lblTv.setIcon(new ImageIcon(Game.class.getResource("/Imagenes/tv_silueta.png")));
+		lblTv.setIcon(new ImageIcon(Game.class.getResource("/Imagenes/tv_sil.png")));
 		lblTv.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTv.setBounds(0, 11, 712, 300);
 		panelTV.add(lblTv);
@@ -106,5 +109,10 @@ public class Game extends JFrame {
 		});
 		btnTv.setBounds(358, 355, 140, 45);
 		panelTV.add(btnTv);
+		
+		JLabel lblCorrecto = new JLabel("Correcto!");
+		lblCorrecto.setBounds(342, 148, 134, 58);
+		//lblCorrecto.getFont(https://fonts.googleapis.com/css?family=Cabin+Sketch);
+		panelTV.add(lblCorrecto);
 	}
 }

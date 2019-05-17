@@ -1,6 +1,7 @@
 package Pack1;
 
 import java.awt.BorderLayout;
+import Tipografias.Fuentes;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -41,6 +42,7 @@ public class Principal extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	Fuentes tipoFuente;
 	public Principal() {
 		setResizable(false);
 		setTitle("What Is");
@@ -50,6 +52,7 @@ public class Principal extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		this.setLocationRelativeTo(null);
+		tipoFuente = new Fuentes();
 		
 		JButton btnJugar = new JButton("Jugar");
 		btnJugar.setFont(new Font("Tahoma", Font.PLAIN, 30));
@@ -66,8 +69,8 @@ public class Principal extends JFrame {
 		
 		JLabel lblNombre = new JLabel("What Is");
 		lblNombre.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 60));
-		lblNombre.setBounds(275, 77, 280, 79);
+		lblNombre.setFont(tipoFuente.Fuentes(tipoFuente.CS,0,100));
+		lblNombre.setBounds(221, 38, 400, 143);
 		contentPane.add(lblNombre);
 		
 		JButton btnInstrucciones = new JButton("Como jugar");
