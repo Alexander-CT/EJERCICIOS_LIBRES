@@ -117,29 +117,29 @@ public class Logica {
 				switch (resp){
 					case 1:
 						b1="Rinoceronte";
-						b2="name2";
-						b3="name3";
-						b4="name4";
+						b2="pato";
+						b3="ganso";
+						b4="dinosaurio";
 						//b5="name5";
 						break;
 					case 2:
-						b1="name1";
+						b1="Ingeniero";
 						b2="Rinoceronte";
-						b3="name3";
-						b4="name4";
+						b3="Jirafa";
+						b4="Hipopotamo";
 						//b5="name5";
 						break;
 					case 3:
-						b1="name1";
-						b2="name2";
+						b1="gusano";
+						b2="murcielago";
 						b3="Rinoceronte";
-						b4="name4";
+						b4="laptop";
 						//b5="name5";
 						break;
 					case 4:
-						b1="name1";
-						b2="name2";
-						b3="name3";
+						b1="perro";
+						b2="gato";
+						b3="troyano";
 						b4="Rinoceronte";
 						//b5="name5";
 						break;
@@ -166,29 +166,29 @@ public class Logica {
 				switch (resp){
 					case 1:
 						b1="Sofá";
-						b2="name2";
-						b3="name3";
-						b4="name4";
+						b2="silla";
+						b3="mesa";
+						b4="carpeta";
 						//b5="name5";
 						break;
 					case 2:
-						b1="name1";
+						b1="pupitre";
 						b2="Sofá";
-						b3="name3";
-						b4="name4";
+						b3="Proyector";
+						b4="Plumon";
 						//b5="name5";
 						break;
 					case 3:
-						b1="name1";
-	  					b2="name2";
+						b1="Analista";
+	  					b2="Silla";
 	  					b3="Sofá";
-	  					b4="name4";
+	  					b4="Mesa";
 	  					//b5="name5";
 	  					break;
 					case 4:
-						b1="name1";
-	  					b2="name2";
-	  					b3="name3";
+						b1="Mesa";
+	  					b2="Martillo";
+	  					b3="Destornillador";
 	  					b4="Sofá";
 	  					//b5="name5";
 	  					break;
@@ -213,29 +213,29 @@ public class Logica {
 				switch (resp){
 					case 1:
 						b1="PC";
-						b2="name2";
-						b3="name3";
-						b4="name4";
+						b2="usb";
+						b3="cargador";
+						b4="borrador";
 						//b5="name5";
 						break;
 					case 2:
-						b1="name1";
+						b1="laptop";
 						b2="PC";
-						b3="name3";
-						b4="name4";
+						b3="usb";
+						b4="teclado";
 						//b5="name5";
 						break;
 					case 3:
-						b1="name1";
-						b2="name2";
+						b1="teclado";
+						b2="laptop";
 						b3="PC";
-						b4="name4";
+						b4="usb";
 						//b5="name5";
 						break;
 					case 4:
-						b1="name1";
-						b2="name2";
-						b3="name3";
+						b1="usb";
+						b2="teclado";
+						b3="laptop";
 						b4="PC";
 						//b5="name5";
 						break;
@@ -260,29 +260,29 @@ public class Logica {
 				switch (resp){
 	  				case 1:
 	  					b1="Oso";
-	  					b2="name2";
-	  					b3="name3";
-	  					b4="name4";
+	  					b2="Gorila";
+	  					b3="Pulpo";
+	  					b4="Calamar";
 	  					//b5="name5";
 	  					break;
 	  				case 2:
-	  					b1="name1";
+	  					b1="Pez";
 	  					b2="Oso";
-	  					b3="name3";
-	  					b4="name4";
+	  					b3="Conejo";
+	  					b4="Loro";
 	  					//b5="name5";
 	  					break;
 	  				case 3:
-	  					b1="name1";
-	  					b2="name2";
+	  					b1="Gorila";
+	  					b2="Mono";
 	  					b3="Oso";
-	  					b4="name4";
+	  					b4="Pie Grande";
 	  					//b5="name5";
 	  					break;
 	  				case 4:
-	  					b1="name1";
-	  					b2="name2";
-	  					b3="name3";
+	  					b1="Lobo";
+	  					b2="Perro";
+	  					b3="Gorila";
 	  					b4="Oso";
 	  					//b5="name5";
 	  					break;
@@ -307,29 +307,30 @@ public class Logica {
 				switch (resp){
 					case 1:
 						b1="Zorro";
-						b2="name2";
-						b3="name3";
-						b4="name4";
+						b2="gato";
+						b3="Lobo";
+						b4="Perro";
 						//b5="name5";
 						break;
 					case 2:
-						b1="name1";
+						b1="Lobo";
 						b2="Zorro";
-						b3="name3";
-						b4="name4";
+////						
+                                                b3="Perro";
+						b4="hiena";
 						//b5="name5";
 						break;
 					case 3:
 						b1="name1";
-	  					b2="name2";
+	  					b2="Lobo";
 	  					b3="Zorro";
-	  					b4="name4";
+	  					b4="Perro";
 	  					//b5="name5";
 	  					break;
 					case 4:
-						b1="name1";
-						b2="name2";
-						b3="name3";
+						b1="Perro";
+						b2="Lobo";
+						b3="Hiena";
 						b4="Zorro";
 						//b5="name5";
 						break;
