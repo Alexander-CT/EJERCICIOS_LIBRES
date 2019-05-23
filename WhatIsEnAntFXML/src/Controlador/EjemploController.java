@@ -7,7 +7,9 @@ package Controlador;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 
 /**
  * FXML Controller class
@@ -15,7 +17,6 @@ import javafx.fxml.Initializable;
  * @author ADM667
  */
 public class EjemploController implements Initializable {
-
     /**
      * Initializes the controller class.
      */

@@ -5,29 +5,48 @@
 .mainFxmlClass {
 }
 .background {    
-    -fx-background-image: url("/Imagenes/fondo2.jpg")/* no-repeat center center fixed*/; 
-    -webkit-background-size: cover;
+    /*-fx-background-image: url("/Imagenes/fondo1.jpg")*/ ;/*no-repeat center center fixed*/
+    /*-webkit-background-size: 850 580;
     -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -o-background-size: 850 580;
+    background-size: cover;*/
     
     /*Fondo color oscuro
     -fx-background-color: #1d1d1d;*/
     
-    /*Fondo imagen no dinamica
-    -fx-background-image: url("/Imagenes/fondo1.jpg");
+    /*Fondo imagen no dinamica*/
+    -fx-background-image: url("/Imagenes/fondo3.jpg");
     -fx-background-repeat: stretch;   
-    -fx-background-size: 900 506;
+    -fx-background-size: 850 580;
     -fx-background-position: center center;
-    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);*/
+    /*-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);*/
 }
 
-.label {
-    -fx-font-size: 11pt;
-    -fx-font-family: "Segoe UI Semibold";
-    -fx-text-fill: white;
-    -fx-opacity: 0.6;
+/*@font-face {
+    -fx-font-family: "CabinS";
+    src: url("/Tipografias/CabinSketch-Regular.ttf");
+}*/
+@font-face {
+    font-family: "CabinSR";
+    src: url("/Tipografias/CabinSketch-Regular.ttf");
 }
+
+@font-face {
+    font-family: "CabinSB";
+    src: url("/Tipografias/CabinSketch-Bold.ttf");
+}
+.label {
+    -fx-font-size: 70pt;
+    
+    /*-fx-src: ("/Tipografias/CabinSketch-Regular");*/
+    -fx-font-family: "CabinSR";
+    -fx-border-color: transparent transparent #E8E8E8 transparent;
+    /*-fx-src: ("/Tipografias/CabinSketch-Regular");*/
+    -fx-text-fill: white;
+    
+    /*-fx-opacity: 0.6;*/
+}
+
 
 .label-bright {
     -fx-font-size: 11pt;
@@ -37,7 +56,7 @@
 }
 
 .label-header {
-    -fx-font-size: 32pt;
+    -fx-font-size: 70pt;
     -fx-font-family: "Segoe UI Light";
     -fx-text-fill: white;
     -fx-opacity: 1;

@@ -19,6 +19,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 /**
@@ -139,6 +140,9 @@ public class PrincipalController implements Initializable {
         /*URL linkImagen = getClass().getResource("/Imagenes/fondo1");
         Image img=new Image(linkImagen.toString());
         principalTodo.setBackground(img);*/
+        //principalTodo.set
+        //lblNombre.setFont(Font.loadFont("/Tipografias/CabinSketch-Regular.ttf", 60));
+        Font.loadFont(getClass().getResourceAsStream("/Tipografias/CabinSketch-Regular.ttf"),70); 
     }    
     
 }
