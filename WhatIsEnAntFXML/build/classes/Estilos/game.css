@@ -4,14 +4,14 @@
 .background {
     -fx-background-image: url("/Imagenes/fondo4.jpg");
     -fx-background-repeat: stretch;   
-    -fx-background-size: 850 580;
+    -fx-background-size: 860 590;
     -fx-background-position: center center;
 }
 
 .label {
-    -fx-font-size: 11pt;
+    -fx-font-size: 25pt;
     -fx-font-family: "Segoe UI Semibold";
-    -fx-text-fill: white;
+    -fx-text-fill: black;
     -fx-opacity: 0.6;
 }
 

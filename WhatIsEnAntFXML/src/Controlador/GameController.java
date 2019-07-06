@@ -20,6 +20,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 //import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 //import javax.swing.ImageIcon;
@@ -40,7 +41,13 @@ public class GameController implements Initializable {
     //StackPane root = new StackPane();
     
     @FXML
+    private AnchorPane todo;
+    
+    @FXML
     private ImageView visor;
+    
+    @FXML
+    private Label lblPuntaje;
     
     @FXML
     private Button btnVolver;
@@ -60,8 +67,7 @@ public class GameController implements Initializable {
     @FXML
     private Button btn4;
     
-    @FXML
-            
+    @FXML 
     void btnVolverAccion(ActionEvent event) {
         try{
             //Dirigete al stage actual y toma la escena actual (valga la redundancia)
@@ -84,39 +90,57 @@ public class GameController implements Initializable {
     }
     
     @FXML
-    void btn1Accion(ActionEvent event) {
+    void accionBtn1(ActionEvent event) {
         try{
             L.procesoBoton(btn1.getText());
             JOptionPane.showMessageDialog(null, L.getMsg(), L.getTitulo(), JOptionPane.INFORMATION_MESSAGE);
             URL linkImagen1 = getClass().getResource(L.getSilueta());
             Image img1=new Image(linkImagen1.toString());
             visor.setImage(img1);
+            lblPuntaje.setText("Puntaje: "+L.getPuntaje());
+            //******
+            FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("/Vista/Game.fxml"));
+            Parent root1= (Parent)fxmlLoader.load();
+            todo.getChildren().setAll(root1);
+            
         }catch(Exception ex){
             System.out.println("Ocurrió un error, lo sentimos");
         }
     }
 
     @FXML
-    void btn2Accion(ActionEvent event) {
+    void accionBtn2(ActionEvent event) {
         try{
             L.procesoBoton(btn2.getText());
             JOptionPane.showMessageDialog(null, L.getMsg(), L.getTitulo(), JOptionPane.INFORMATION_MESSAGE);
             URL linkImagen2 = getClass().getResource(L.getSilueta());
             Image img2=new Image(linkImagen2.toString());
             visor.setImage(img2);
+            lblPuntaje.setText("Puntaje: "+L.getPuntaje());
+            //******
+            FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("/Vista/Game.fxml"));
+            Parent root1= (Parent)fxmlLoader.load();
+            todo.getChildren().setAll(root1);
+            
         }catch(Exception ex){
             System.out.println("Ocurrió un error, lo sentimos");
         }
     }
 
     @FXML
-    void btn3Accion(ActionEvent event) {
+    void accionBtn3(ActionEvent event) {
         try{
             L.procesoBoton(btn3.getText());
             JOptionPane.showMessageDialog(null, L.getMsg(), L.getTitulo(), JOptionPane.INFORMATION_MESSAGE);
             URL linkImagen3 = getClass().getResource(L.getSilueta());
             Image img3=new Image(linkImagen3.toString());
             visor.setImage(img3);
+            lblPuntaje.setText("Puntaje: "+L.getPuntaje());
+            //******
+            FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("/Vista/Game.fxml"));
+            Parent root1= (Parent)fxmlLoader.load();
+            todo.getChildren().setAll(root1);
+            
         }catch(Exception ex){
             System.out.println("Ocurrió un error, lo sentimos");
         }
@@ -124,13 +148,19 @@ public class GameController implements Initializable {
     }
 
     @FXML
-    void btn4Accion(ActionEvent event) {
+    void accionBtn4(ActionEvent event) {
         try{
             L.procesoBoton(btn4.getText());
             JOptionPane.showMessageDialog(null, L.getMsg(), L.getTitulo(), JOptionPane.INFORMATION_MESSAGE);
             URL linkImagen4 = getClass().getResource(L.getSilueta());
             Image img4=new Image(linkImagen4.toString());
             visor.setImage(img4);
+            lblPuntaje.setText("Puntaje: "+L.getPuntaje());
+            //******
+            FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("/Vista/Game.fxml"));
+            Parent root1= (Parent)fxmlLoader.load();
+            todo.getChildren().setAll(root1);
+            
         }catch(Exception ex){
             System.out.println("Ocurrió un error, lo sentimos");
         }
@@ -149,6 +179,6 @@ public class GameController implements Initializable {
         btn2.setText(L.getB2());
         btn3.setText(L.getB3());
         btn4.setText(L.getB4());
-    }    
-    
+        lblPuntaje.setText("Puntaje: 0");
+    }
 }

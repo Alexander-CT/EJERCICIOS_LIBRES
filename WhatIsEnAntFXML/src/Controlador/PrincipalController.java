@@ -24,12 +24,10 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author ADM667
+ * @author CASTRO TOCAFFONDI Alexander Piero
  */
 public class PrincipalController implements Initializable {
     //Backgroung fondo=new Background();
-    @FXML
-    private AnchorPane principalTodo;
     
     @FXML
     private Label lblNombre;
@@ -142,7 +140,7 @@ public class PrincipalController implements Initializable {
         principalTodo.setBackground(img);*/
         //principalTodo.set
         //lblNombre.setFont(Font.loadFont("/Tipografias/CabinSketch-Regular.ttf", 60));
-        Font.loadFont(getClass().getResourceAsStream("/Tipografias/CabinSketch-Regular.ttf"),70); 
+        Font.loadFont(getClass().getResourceAsStream("/Tipografias/CabinSketch-Regular.ttf"),70);
     }    
     
 }

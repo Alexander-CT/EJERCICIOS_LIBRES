@@ -1,13 +1,13 @@
 package Escencial;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 /**
  *
  * @author CASTRO TOCAFFONDI Alexander Piero
  */
 public class Azar {
-    int cantImg=6, cantBtn=4;
+    private final int cantImg=6, cantBtn=4;
     /*String[] animales = {"Oso","Zorro","Rinoceronte"};
     String[] objetos = {"TV","Sofá","PC"};
     

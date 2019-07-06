@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author ADM667
+ * @author CASTRO TOCAFFONDI Alexander Piero
  */
 public class satesatesate extends Application {
     
@@ -22,8 +22,10 @@ public class satesatesate extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/Vista/Principal.fxml"));
         
         Scene scene = new Scene(root);
-        
         stage.setScene(scene);
+        stage.setResizable(false);
+        stage.setFullScreen(false);
+        stage.setTitle("What's It");
         stage.show();
     }
 
