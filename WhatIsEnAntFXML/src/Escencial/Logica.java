@@ -23,6 +23,10 @@ public class Logica {
         return puntaje;
     }
     
+    /*public void Despierta(){
+        .;
+    }*/
+    
     public void setPuntaje(int puntaje) {
         this.puntaje = puntaje;
     }
