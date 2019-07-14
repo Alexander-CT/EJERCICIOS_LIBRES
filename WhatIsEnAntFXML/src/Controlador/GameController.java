@@ -99,6 +99,7 @@ public class GameController implements Initializable {
             visor.setImage(img1);
             lblPuntaje.setText("Puntaje: "+L.getPuntaje());
             //******
+            Thread.sleep(5000);
             FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("/Vista/Game.fxml"));
             Parent root1= (Parent)fxmlLoader.load();
             todo.getChildren().setAll(root1);
@@ -118,6 +119,7 @@ public class GameController implements Initializable {
             visor.setImage(img2);
             lblPuntaje.setText("Puntaje: "+L.getPuntaje());
             //******
+            Thread.sleep(5000);
             FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("/Vista/Game.fxml"));
             Parent root1= (Parent)fxmlLoader.load();
             todo.getChildren().setAll(root1);
@@ -137,6 +139,7 @@ public class GameController implements Initializable {
             visor.setImage(img3);
             lblPuntaje.setText("Puntaje: "+L.getPuntaje());
             //******
+            Thread.sleep(5000);
             FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("/Vista/Game.fxml"));
             Parent root1= (Parent)fxmlLoader.load();
             todo.getChildren().setAll(root1);
@@ -157,6 +160,7 @@ public class GameController implements Initializable {
             visor.setImage(img4);
             lblPuntaje.setText("Puntaje: "+L.getPuntaje());
             //******
+            Thread.sleep(5000);
             FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("/Vista/Game.fxml"));
             Parent root1= (Parent)fxmlLoader.load();
             todo.getChildren().setAll(root1);
